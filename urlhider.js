@@ -1,7 +1,7 @@
 function hideevilurl(evilstring, goodstring) {
 	var prefix = String.fromCharCode(8238) + " ";
 	var between = "#!/?794473621=diu&4b412fd79ae1=q?/!#";
-	var goodstring = esrever.reverse(goodstring);
+	var goodstring = goodstring.split("").reverse().join(""); // esrever.reverse(goodstring);
 	var suffix = " " + String.fromCharCode(8236);
 
 	return prefix + evilstring + between + goodstring + suffix;
@@ -38,9 +38,17 @@ function findgoodurl(valuestring, otherstring) {
 	if(valuestring == "other") {
 		return otherstring;
 	}
+	return "I HATE THIS THING";
 }
 
 function generate(form) {
-	var result = document.querySelectorAll('#result');
-	result.write(hideevilurl(form.evilstring.value, form.goodstring.value));
+	var result = document.getElementById('result');
+	var valuestring = null;
+	for(var i = 0; i < form.goodstring.length; i++) {
+		if(form.goodstring[i].checked) {
+			var valuestring = form.goodstring[i].value;
+			break;
+		}
+	}
+	result.innerHTML = hideevilurl(form.evilstring.value, findgoodurl(valuestring, form.other.value));
 }
