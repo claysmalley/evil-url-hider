@@ -50,5 +50,5 @@ function generate(form) {
 			break;
 		}
 	}
-	result.innerHTML = hideevilurl(form.evilstring.value, findgoodurl(valuestring, form.other.value));
+	result.value = hideevilurl(form.evilstring.value, findgoodurl(valuestring, form.other.value));
 }

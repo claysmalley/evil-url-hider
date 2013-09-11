@@ -33,7 +33,10 @@
 				</div>
 				<div><input type="button" value="Generate!" onClick="generate(this.form)"/></div>
 			</form>
-			<div class="whitebox" id="result"><span style="color:grey">generate a URL!</span></div>
+			<div>Result:</div>
+			<div class="whitebox">
+				<input type="text" id="result" onClick="this.select()" readonly value=""/>
+			</div>
 		</div>
 	</body>
 	<link href='http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps|Inika&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>

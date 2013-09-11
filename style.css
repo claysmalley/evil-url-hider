@@ -34,3 +34,9 @@ div.whitebox{
 	border-radius: 10px;
 	padding: 10px;
 }
+
+input#result {
+	border:none;
+	width: 100%;
+	font-family:'Inika', sans-serif;
+}
