@@ -15,25 +15,28 @@
 				</ul>
 			</div>
 			<form name="urlhideroptions" action="" method="GET">
-				<div class="whitebox" id="evilurl"><label>Evil URL to hide: <input type="text" name="evilstring" value="http://example.com/" onclick="this.select();"/></label></div>
-				<div class="whitebox" id="goodurls">
-					<div>Hide it as:</div>
-					<div><label><input type="radio" name="goodstring" value="wikipedia" checked />Wikipedia</label></div>
-					<div><label><input type="radio" name="goodstring" value="google"/>Google</label></div>
-					<div><label><input type="radio" name="goodstring" value="nytimes"/>NY Times</label></div>
-					<div><label><input type="radio" name="goodstring" value="facebook"/>Facebook</label></div>
-					<div><label><input type="radio" name="goodstring" value="youtube"/>YouTube</label></div>
-					<div><label><input type="radio" name="goodstring" value="baidu"/>Baidu</label></div>
-					<div><label><input type="radio" name="goodstring" value="qq"/>QQ</label></div>
-					<div><label><input type="radio" name="goodstring" value="yandex"/>&#x042f;&#x043d;&#x0434;&#x0435;&#x043a;&#x0441; (Yandex)</label></div>
-					<div><label><input type="radio" name="goodstring" value="vkontakte"/>&#x0412;&#x041a;&#x043e;&#x043d;&#x0442;&#x0430;&#x043a;&#x0442;&#x0435; (VKontakte)</label></div>
-					<div><label><input type="radio" name="goodstring" value="other">other: <input type="text" name="other" value="http://example.com/" onclick="this.select();"/></input></label></div>
-				</div>
-				<div><input type="button" value="Generate!" onClick="generate(this.form)"/></div>
+			<h2>1. Paste the URL</h2>
+			<div class="whitebox" id="evilurl"><label>Evil URL to hide: <input type="text" name="evilstring" value="http://example.com/" onclick="this.select();"/></label></div>
+			<h2>2. Pick a URL to hide it as</h2>
+			<div class="whitebox" id="goodurls">
+				<div><label><input type="radio" name="goodstring" value="wikipedia" checked />Wikipedia</label></div>
+				<div><label><input type="radio" name="goodstring" value="google"/>Google</label></div>
+				<div><label><input type="radio" name="goodstring" value="nytimes"/>NY Times</label></div>
+				<div><label><input type="radio" name="goodstring" value="facebook"/>Facebook</label></div>
+				<div><label><input type="radio" name="goodstring" value="youtube"/>YouTube</label></div>
+				<div><label><input type="radio" name="goodstring" value="baidu"/>Baidu</label></div>
+				<div><label><input type="radio" name="goodstring" value="qq"/>QQ</label></div>
+				<div><label><input type="radio" name="goodstring" value="yandex"/>&#x042f;&#x043d;&#x0434;&#x0435;&#x043a;&#x0441; (Yandex)</label></div>
+				<div><label><input type="radio" name="goodstring" value="vkontakte"/>&#x0412;&#x041a;&#x043e;&#x043d;&#x0442;&#x0430;&#x043a;&#x0442;&#x0435; (VKontakte)</label></div>
+				<div><label><input type="radio" name="goodstring" value="other">other: <input type="text" name="other" value="http://example.com/" onclick="this.select();"/></input></label></div>
+			</div>
+			<h2>3. And go!</h2>
+			<div><input type="button" value="Generate!" onClick="generate(this.form)"/></div>
 			</form>
-			<div>Result:</div>
 			<div class="whitebox">
 				<input type="text" id="result" onClick="this.select()" readonly value=""/>
+			</div>
+			<div>
 			</div>
 		</div>
 	</body>

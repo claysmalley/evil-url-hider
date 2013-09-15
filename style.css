@@ -25,6 +25,12 @@ h1 {
 	font-weight: normal;
 }
 
+h2 {
+	font-size: 24px;
+	margin: 10px 10px 0 10px;
+	padding: 10px 10px 0 10px;
+}
+
 div#goodurls div {
 	margin: 0;
 }
