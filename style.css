@@ -18,10 +18,11 @@ div#content div {
 	margin: 10px;
 }
 
-div#header {
+h1 {
 	font-family: 'Oleo Script Swash Caps', cursive;
 	font-size: 48px;
 	text-align: center;
+	font-weight: normal;
 }
 
 div#goodurls div {
